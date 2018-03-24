@@ -394,9 +394,10 @@ function init_barcss() {
   });
 }
 function UpdateSiteinfo(callback, error_back, force) {
-  var sso = 'http://os0x.heteml.jp/ss-onet/json/wedataAutoPagerizeSITEINFO.json';
+  // var sso = 'http://os0x.heteml.jp/ss-onet/json/wedataAutoPagerizeSITEINFO.json';
   var wedata = 'http://wedata.net/databases/AutoPagerize/items.json';
-  var url = force ? wedata : sso;
+  // var url = force ? wedata : sso;
+  var url = wedata;
   var xhr = new XMLHttpRequest();
   siteinfo = [];
   xhr.onload = function () {
